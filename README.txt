@@ -1,0 +1,1 @@
+Short guessing game where you think of a number between 0 and 1000 and the computer guesses it within 10 tries as it continuously halves it based on your feedback -- whether the number is too low, too high or correct.
