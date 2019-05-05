@@ -16,7 +16,7 @@ public class Guess {
         do {
         guess = (min + max) / 2;
         System.out.println("My guess is " + guess);
-        System.out.println("Is it higher, or lower?");
+        System.out.println("Is it higher (h), lower (l) or correct (0)?");
         
         userInput = console.next(); // ask user to input either l (lower) or h (higher)
         
