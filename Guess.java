@@ -1,5 +1,3 @@
-
-// import Scanner
 import java.util.*;
 
 public class Guess {
@@ -13,7 +11,7 @@ public class Guess {
         Scanner console = new Scanner(System.in);
         
         System.out.println("I will try to guess the number you are thinking of in 10 guesses. After my guess, enter either L or H to tell me whether the number you're thinking of is higher or lower, or 0 if my guess is correct.");
-        playing = true; // set boolean to true, so the while loop condition is satisfied
+        playing = true; 
         
         do {
         guess = (min + max) / 2;
@@ -22,13 +20,6 @@ public class Guess {
         
         userInput = console.next(); // ask user to input either l (lower) or h (higher)
         
-        /*
-        If user enters l (lower), set max to guess - 1 
-        If user enters h (higher), set max to guess + 1 
-        If user enters 0, exit while loop and show that the program has guessed correctly
-        Any other input, the min, max and guess variables are set to their original values
-        and the user has to try again from the beginning.
-        */
         if (userInput.equals("L") || userInput.equals("l")) {
             max = guess - 1; 
             operationCount++;
